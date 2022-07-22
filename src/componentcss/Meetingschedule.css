@@ -1,0 +1,49 @@
+.meetingschedule {
+  display: grid;
+  grid-template-rows: repeat(3, 0.2fr);
+  grid-template-columns: repeat(3, 0.5fr);
+  text-align: center;
+  padding: 1%;
+  border: 2px solid transparent;
+  border-image-source: linear-gradient(to right, white, black, white);
+  border-image-slice: 1;
+  margin: 0.5%;
+}
+.meetingschedule_details {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  font-size: 140%;
+  color: #808080;
+  text-align: start;
+  font-style: italic;
+}
+.meetingschedule_time {
+  grid-row: 1/2;
+  grid-column: 3/4;
+  font-size: 125%;
+  color: #696969;
+  text-align: right;
+}
+.meetingschedule_venue {
+  text-align: center;
+  grid-row: 2/3;
+  grid-column: 2/3;
+  font-size: 120%;
+  color: black;
+  font-weight: bold;
+}
+.meetingschedule_btns {
+  text-align: center;
+  grid-row: 3/4;
+  grid-column: 1/-1;
+}
+.meetingschedule_btns button {
+  border: none;
+  border-radius: 10px;
+  font-size: 115%;
+  padding: 1.5%;
+  margin: 1%;
+  background: black;
+  color: white;
+  cursor: pointer;
+}

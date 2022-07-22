@@ -1,0 +1,61 @@
+.Signup {
+  text-align: center;
+}
+.Signin_structure {
+  display: grid;
+  display: -moz-grid;
+  display: -ms-grid;
+  grid-template-rows: 2fr;
+  grid-template-columns: repeat(2, 1fr);
+}
+.Signin_logo {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  font-size: 150%;
+}
+.Signin_details {
+  grid-row: 1/2;
+  grid-column: 2/3;
+  font-size: 150%;
+}
+.Signup_start,
+.Signup_end {
+  font-size: 300%;
+}
+.Signin_logo span:hover,
+.Signin_details span:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.Signin_details button {
+  border: none;
+  padding: 2%;
+  margin: 2%;
+  cursor: pointer;
+  border-radius: 100px;
+  font-size: 70%;
+}
+.Signin_details input {
+  border: none;
+  padding: 1%;
+  margin: 2%;
+  cursor: text;
+  background: #faf9f6;
+  border-radius: 5px;
+  min-width: 80%;
+}
+@media screen and (max-width: 720px) {
+  .Signin_structure {
+    grid-template-rows: repeat(2, 0.5fr);
+    grid-template-columns: 2fr;
+  }
+  .Signin_logo {
+    margin-top: 5%;
+    grid-row: 1/2;
+    grid-column: 1/-1;
+  }
+  .Signin_details {
+    grid-row: 2/3;
+    grid-column: 1/-1;
+  }
+}

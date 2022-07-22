@@ -1,0 +1,60 @@
+.Socialcause {
+  display: grid;
+  grid-template-rows: 0.1fr 0.3fr 0.3fr;
+  border: 2px solid transparent;
+  border-image-source: linear-gradient(to right, white, black, white);
+  border-image-slice: 1;
+  margin-bottom: 0.5%;
+  padding: 1%;
+}
+
+.Socailcause_UpperDetail {
+  grid-row: 1/2;
+}
+
+.Socailcause_UpperDetail img {
+  width: 150px;
+  border-radius: 50%;
+}
+.Socailcause_UpperDetail p {
+  font-size: 130%;
+  font-weight: bolder;
+  margin-top: -0.5%;
+}
+.Socialcause_Picture {
+  grid-row: 2/3;
+}
+.Socialcause_Picture img {
+  width: 90%;
+}
+.Socialcause_Description {
+  grid-row: 3/4;
+  padding: 0% 5%;
+  text-align: left;
+  width: 90%;
+  font-size: 120%;
+}
+.Socialcause_btns {
+  text-align: center;
+}
+.Socialcause button {
+  border: none;
+  font-size: 110%;
+  border-radius: 15px;
+  padding: 2% 8%;
+  margin: 1%;
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+@media screen and (max-width: 350px) {
+  .Socialcause_Description {
+    font-size: 100%;
+  }
+  .Socailcause_UpperDetail img {
+    width: 100px;
+  }
+  .Socialcause_Picture img {
+    width: 95%;
+  }
+}

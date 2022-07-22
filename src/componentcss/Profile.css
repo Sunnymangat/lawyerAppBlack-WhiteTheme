@@ -1,0 +1,48 @@
+.profilepage {
+  display: grid;
+  grid-template-rows: 0.5fr 0.2fr;
+  padding: 1%;
+}
+.profilepage_image {
+  grid-row: 1/2;
+  text-align: center;
+}
+.profilepage_details {
+  grid-row: 2/3;
+}
+.profilepage_name {
+  text-align: center;
+  font-size: 180%;
+  font-weight: 500;
+  font-style: italic;
+  color: black;
+}
+.profilepage_location {
+  text-align: center;
+  font-size: 150%;
+  font-weight: 400;
+  font-style: italic;
+  color: black;
+}
+.profilepage_description {
+  font-size: 130%;
+  color: darkslategray;
+}
+.profilepage_btns {
+  text-align: center;
+}
+.profilepage_btns button {
+  border: none;
+  border-radius: 10px;
+  font-size: 120%;
+  color: white;
+  padding: 2%;
+  margin: 1%;
+  cursor: pointer;
+  background: black;
+}
+@media screen and (max-width: 420px) {
+  .profilepage_image img {
+    width: 80%;
+  }
+}

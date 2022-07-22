@@ -1,0 +1,91 @@
+.recommend {
+  text-align: left;
+  display: grid;
+  grid-template-rows: 0.5fr 0.2fr;
+  grid-template-columns: repeat(4, 0.3fr);
+  padding: 1%;
+  margin: 1%;
+  grid-column-gap: 10px;
+  border: 2px solid transparent;
+  border-image-source: linear-gradient(to right, white, black, white);
+  border-image-slice: 2;
+}
+.recommend_picture {
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+.recommend_picture img {
+  height: 150px;
+  border-radius: 50%;
+}
+.recommend_details {
+  grid-row: 1/2;
+  grid-column: 2/3;
+  font-weight: bold;
+  font-style: italic;
+}
+.recommend_experience {
+  grid-row: 1/2;
+  grid-column: 3/5;
+  font-size: 115%;
+  font-weight: 500;
+  height: 150px;
+  color: grey;
+  overflow: hidden;
+}
+.recommend_btns {
+  grid-row: 2/3;
+  grid-column: 1/-1;
+  text-align: center;
+}
+.recommend_name {
+  font-size: 150%;
+  color: black;
+}
+.recommend_address {
+  font-size: 140%;
+  color: darkslategray;
+}
+.recommend_btns button {
+  border: none;
+  font-size: 120%;
+  margin: 1%;
+  padding: 2%;
+  border-radius: 10px;
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+@media screen and (max-width: 720px) {
+  .recommend {
+    display: grid;
+    grid-template-rows: 0.5fr 0.1fr 0.1fr;
+    height: unset;
+  }
+  .recommend_picture {
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+  .recommend_details {
+    grid-row: 1/2;
+    grid-column: 2/-1;
+    text-align: right;
+  }
+  .recommend_experience {
+    grid-row: 2/3;
+    grid-column: 1/5;
+    font-size: 115%;
+    text-align: left;
+  }
+  .recommend_btns {
+    grid-row: 3/4;
+    grid-column: 1/-1;
+    text-align: center;
+  }
+  .recommend_name {
+    font-size: 140%;
+  }
+  .recommend_address {
+    font-size: 130%;
+  }
+}

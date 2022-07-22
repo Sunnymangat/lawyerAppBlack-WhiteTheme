@@ -1,0 +1,36 @@
+.NavbarArea {
+  display: grid;
+  display: -ms-grid;
+  display: -moz-grid;
+  grid-template-columns: 0.2fr 10fr 0.1fr;
+  margin-left: 0.1%;
+  margin-right: 0.1%;
+  padding: 0.5%;
+  color: black;
+  border-radius: 10px;
+  animation: navbarAnimation 20s linear infinite alternate;
+}
+.NavbarArea_First {
+  grid-column: 1/2;
+  font-size: 300%;
+}
+.NavbarArea_Second {
+  grid-column: 2/3;
+  text-align: center;
+  font-size: 300%;
+  font-style: italic;
+}
+.NavbarArea_Third {
+  grid-column: 3/-1;
+  font-size: 300%;
+}
+.NavbarArea_First :hover,
+.NavbarArea_Third :hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 460px) {
+  .NavbarArea_Second {
+    font-size: 200%;
+  }
+}

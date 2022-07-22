@@ -1,0 +1,29 @@
+.ModifySection {
+  border: 2px solid gainsboro;
+}
+.ModifySectionText {
+  font-size: 130%;
+  text-align: left;
+}
+.ModifySection input,
+.ModifySection textarea {
+  border: none;
+  font-size: 110%;
+  padding: 1%;
+  margin: 1%;
+  outline: none;
+  background: #d3dedc;
+  border-radius: 10px;
+  width: 95%;
+}
+.ModifySection input:focus,
+.ModifySection textarea:focus,
+.ModifySection input:focus-visible,
+.ModifySection textarea:focus-visible {
+  background: white;
+}
+.ModifySection textarea {
+  height: 75px;
+  max-height: 150px;
+  overflow-y: scroll;
+}

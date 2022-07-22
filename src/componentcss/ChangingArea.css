@@ -1,0 +1,55 @@
+.ChangingArea {
+  display: grid;
+  display: -moz-grid;
+  display: -ms-grid;
+  grid-template-columns: 0.02fr 1fr;
+  margin-top: 0.2%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.ChangingArea_First {
+  grid-column: 1/2;
+  border-radius: 10px;
+  position: fixed;
+  z-index: 5;
+}
+.ChangingArea_Icons {
+  font-size: x-large;
+}
+.ChangingArea_Second {
+  grid-column: 2/3;
+  border-radius: 10px;
+  margin: 1% 0.5%;
+}
+.ChangingArea_Content_Visible {
+  font-size: large;
+  margin-top: -10px;
+  text-align: center;
+  color: black;
+}
+.ChangingArea_Content {
+  display: none;
+  font-size: large;
+}
+.ChangingArea_First button {
+  text-align: left;
+  border: none;
+  cursor: pointer;
+  color: black;
+  background-color: transparent;
+  border-radius: 15px;
+}
+.ChangingArea_First button:hover,
+.ChangingArea_First button:active,
+.ChangingArea_First button:focus {
+  color: black;
+  background: white !important;
+}
+.ChangingArea_First button:hover .ChangingArea_Content,
+.ChangingArea_First button:active .ChangingArea_Content,
+.ChangingArea_First button:focus .ChangingArea_Content {
+  display: unset;
+  z-index: 1;
+  color: black;
+  cursor: pointer;
+}

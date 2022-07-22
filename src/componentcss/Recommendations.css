@@ -1,0 +1,11 @@
+.Recommends button {
+  border: none;
+  font-size: 150%;
+  border-radius: 10px;
+  margin: 2% 15%;
+  padding: 2%;
+  background: black;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+}

@@ -1,0 +1,50 @@
+.Homeviewmore {
+  display: grid;
+  grid-template-rows: 0.5fr 0.3fr;
+  padding: 1%;
+}
+.Homeviewmore_picture {
+  grid-row: 1/2;
+  text-align: center;
+}
+.Homeviewmore_details {
+  grid-row: 2/-1;
+}
+.Homeviewmore_details_name {
+  color: black;
+  text-align: center;
+  font-size: 190%;
+  font-style: italic;
+}
+.Homeviewmore_details_location {
+  color: black;
+  text-align: center;
+  font-size: 150%;
+  font-style: italic;
+}
+.Homeviewmore_details_experience {
+  color: #696969;
+  font-size: 130%;
+}
+.Homeviewmore_details_btns {
+  text-align: center;
+}
+.Homeviewmore_details_btns button {
+  border: none;
+  border-radius: 10px;
+  background: black;
+  color: white;
+  padding: 1.5%;
+  margin: 1%;
+  cursor: pointer;
+  font-size: 120%;
+}
+@media screen and (max-width: 420px) {
+  .Homeviewmore_picture img {
+    width: 80%;
+  }
+  .Homeviewmore_details_btns button {
+    margin: 2%;
+    padding: 2%;
+  }
+}
